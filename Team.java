@@ -15,8 +15,8 @@ public class Team {
     private int C_currentR;
     private Card currentCard;
     private Scanner scan = new Scanner(System.in); 
-    private Boolean goal;
-    private Random rand = new Random(); 
+    private boolean goal;
+    private Random rand; 
 
     
     public Team(Board pitch){
@@ -33,6 +33,7 @@ public class Team {
         C_library.shuffle();
         C_discard = new ArrayList<>();
         goal = false;
+        rand = new Random(); 
     }
 
     public void displayRow(Card[] row){
